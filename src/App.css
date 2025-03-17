@@ -2,10 +2,12 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .home-page-container {
   display: flex;
   flex-direction: column;
 }
+
 .title-container {
   position: absolute;
   top: 10%;
@@ -13,11 +15,16 @@
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 20px;
-  padding: 1.5rem;
+  padding-left: 1%;
+  padding-right: 1%;
   margin-top: 3%;
-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
-background-color: var(--card-color);
+  box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+  white-space: nowrap;
+  
+  font-size: 1rem;
+  background-color: var(--card-color);
 }
 
 .main-join-host-btn {
@@ -27,35 +34,46 @@ background-color: var(--card-color);
   align-items: center;
   justify-content: space-around;
 }
+
 #main-host-btn, #main-join-btn  {
   width: 250px;
   color: black;
   z-index: 5;
   box-shadow: #FFF 0 -1px 4px, rgb(186, 186, 186) 0 -2px 10px, #6e6e6e 0 -10px 20px, rgb(0, 0, 0) 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
-
 }
+
 #main-join-btn {
   background-color: rgb(154, 220, 242);
-
 }
+
 #main-host-btn {
   background-color: rgb(89, 237, 59);
-
 }
+
 .gif-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; 
-  z-index: -1; 
-  
+  overflow: hidden;
+  z-index: -1;
 }
-.gif-picker {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: black;
+
+
+/* Mobile Specific Adjustments */
+@media(max-width: 700px) {
+
+  .main-join-host-btn {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  #main-host-btn, #main-join-btn {
+    font-size: 1.2rem;
+  }
+  .gif-background {
+    width: 100%;
+    height: 100%;
+  }
 }
