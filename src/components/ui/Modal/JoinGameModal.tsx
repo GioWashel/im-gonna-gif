@@ -1,5 +1,4 @@
-import { Modal, Box,  TextField, CircularProgress, LinearProgress} from '@mui/material';
-import { width } from '@mui/system';
+import { Modal, Box,  TextField } from '@mui/material';
 import { useState } from 'react';
 interface HostGameModalProps {
     shouldShowModal: boolean;
