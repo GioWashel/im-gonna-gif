@@ -49,12 +49,23 @@ const GifBackground = React.memo(() => {
         'https://media1.tenor.com/m/QD_7pt8rOc0AAAAd/pee-panicking.gif',
         'https://media1.tenor.com/m/ydwrHBXZ8NcAAAAd/nostalgia-critic-doug-walker.gif',
         'https://media1.tenor.com/m/92iUYSlws-oAAAAd/doug-walker-nostalgia-critic.gif',
-        'https://media.tenor.com/r8QaTDj3U6IAAAAi/nyan-cat-poptart-cat.gif'];
+        'https://media.tenor.com/r8QaTDj3U6IAAAAi/nyan-cat-poptart-cat.gif',
+        'https://media1.tenor.com/m/LNsDP78y1REAAAAd/manatee.gif',
+        'https://media1.tenor.com/m/m3OTFYnAigAAAAAC/griffin-family-guy.gif',
+        'https://media.tenor.com/VsvKqGMkC8EAAAAi/sigma-chicken-sigma.gif',
+        'https://media.tenor.com/z0MjBi7_nzwAAAAi/ilya-sigma.gif',
+        'https://media.tenor.com/DLK3NlzfgskAAAAi/nice-sigma.gif',
+        'https://media.tenor.com/UK9G42ByYosAAAAi/chad-meme.gif',
+        'https://media.tenor.com/cnhK5mW2tlcAAAAi/jesse-cat.gif',
+        'https://media1.tenor.com/m/IluiN13oSycAAAAC/celosa.gif'];
 
-        const backgroundGifs = useRef<string[]>(
+        // const backgroundGifs = useRef<string[]>(
+        //     allGifs
+        //       .sort(() => Math.random() - 0.5) // Shuffle the array
+        //       .slice(0, 20) // Take the first 15 GIFs
+        //   );
+          const backgroundGifs = useRef<string[]>(
             allGifs
-              .sort(() => Math.random() - 0.5) // Shuffle the array
-              .slice(0, 20) // Take the first 15 GIFs
           );
   return (
     <div className="gif-background">
