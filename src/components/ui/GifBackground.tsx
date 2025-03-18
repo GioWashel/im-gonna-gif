@@ -57,7 +57,8 @@ const GifBackground = React.memo(() => {
         'https://media.tenor.com/DLK3NlzfgskAAAAi/nice-sigma.gif',
         'https://media.tenor.com/UK9G42ByYosAAAAi/chad-meme.gif',
         'https://media.tenor.com/cnhK5mW2tlcAAAAi/jesse-cat.gif',
-        'https://media1.tenor.com/m/IluiN13oSycAAAAC/celosa.gif'];
+        'https://media1.tenor.com/m/IluiN13oSycAAAAC/celosa.gif',
+        'https://gifsec.com/wp-content/uploads/2022/10/cute-anime-girl-11.gif'];
 
         // const backgroundGifs = useRef<string[]>(
         //     allGifs
