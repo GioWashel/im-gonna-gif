@@ -63,7 +63,7 @@ const GifBackground = React.memo(() => {
         const backgroundGifs = useRef<string[]>(
             allGifs
               .sort(() => Math.random() - 0.5) // Shuffle the array
-              .slice(0, 40) // Take the first 15 GIFs
+              .slice(0, 40) // Take the first 40 GIFs
           );
 
   return (
@@ -82,6 +82,8 @@ const GifBackground = React.memo(() => {
             width: '400px',
             height: 'auto',
             zIndex: Math.random() * -1,
+            borderRadius: 10,
+
           }}
         />
       ))}

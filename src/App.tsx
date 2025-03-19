@@ -4,7 +4,7 @@ import HostGameModal from './components/ui/Modal/HostGameModal';
 import JoinGameModal from './components/ui/Modal/JoinGameModal';
 import './App.css';
 import GifBackground from './components/ui/GifBackground';
-
+import JoinGameList from './components/JoinGameList';
 function App() {
   
   const [showHostModal, setShowHostModal] = useState(false); 
@@ -24,8 +24,8 @@ function App() {
       <div className="title-container">
         <h1>I'M GONNA GIF</h1>
       </div>
-      <div> 
-        <h2 style={{zIndex: 10}}>Play with your friends now!</h2>
+      <div >
+       <h2 id='home-page-slogan'>Play with your friends now!</h2>
       </div>
       <div className="main-join-host-btn">
         <button id="main-host-btn" onClick={handleHost}>
@@ -35,10 +35,15 @@ function App() {
           JOIN GAME
         </button>
       </div>
-      <HostGameModal shouldShowModal={showHostModal} setShouldShowModal={setShowHostModal}/>
-      <JoinGameModal shouldShowModal={showJoinModal} setShouldShowModal={setShowJoinModal}/>
+      <div>
+        <HostGameModal shouldShowModal={showHostModal} setShouldShowModal={setShowHostModal}/>
+        <JoinGameModal shouldShowModal={showJoinModal} setShouldShowModal={setShowJoinModal}/>
+      </div>
       <section>
-        <h2>Check Out Public Games</h2>
+        <div id='home-page-h2>'>
+          <h2>Check Out Public Games</h2>
+        </div>
+        <JoinGameList/>
       </section>
     </div>
   );
