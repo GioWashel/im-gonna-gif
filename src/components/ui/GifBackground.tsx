@@ -60,14 +60,12 @@ const GifBackground = React.memo(() => {
         'https://media1.tenor.com/m/IluiN13oSycAAAAC/celosa.gif',
         'https://gifsec.com/wp-content/uploads/2022/10/cute-anime-girl-11.gif'];
 
-        // const backgroundGifs = useRef<string[]>(
-        //     allGifs
-        //       .sort(() => Math.random() - 0.5) // Shuffle the array
-        //       .slice(0, 20) // Take the first 15 GIFs
-        //   );
-          const backgroundGifs = useRef<string[]>(
+        const backgroundGifs = useRef<string[]>(
             allGifs
+              .sort(() => Math.random() - 0.5) // Shuffle the array
+              .slice(0, 40) // Take the first 15 GIFs
           );
+
   return (
     <div className="gif-background">
       {backgroundGifs.current.map((gif, index) => (
