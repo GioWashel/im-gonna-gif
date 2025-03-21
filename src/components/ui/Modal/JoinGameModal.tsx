@@ -14,6 +14,7 @@ function JoinGameModal({shouldShowModal, setShouldShowModal}: HostGameModalProps
     }
     return (
         <div>
+            <button>Hello, I'd like to record a message for you</button>
             <Modal
             open={shouldShowModal}
             onClose={() => setShouldShowModal(false)}
