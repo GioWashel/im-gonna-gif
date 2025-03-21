@@ -36,7 +36,7 @@ function JoinGameModal({shouldShowModal, setShouldShowModal}: HostGameModalProps
           }}>
             <h2 style={{color: 'black'}}>Join a game!</h2>
             <TextField style={{width: '100%'}}type='text' value={gameCd} placeholder='Enter 4 character game code' onChange={(e) => setGameCd(e.target.value)}/>
-            <button style={{width: '100%'}} onClick={joinGame}>Submit</button>
+            <button style={{width: '100%', backgroundColor: '#05f682'}} onClick={joinGame}>Submit</button>
             {isLoading ? (<img src="https://media1.tenor.com/m/jfmI0j5FcpAAAAAd/loading-wtf.gif" width={100}></img>) : <></>}
             </Box>
         </Modal>
