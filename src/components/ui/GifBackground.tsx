@@ -64,12 +64,11 @@ const GifBackground = React.memo(() => {
             allGifs
               .sort(() => Math.random() - 0.5) // Shuffle the array
               .slice(0, 45) // Take the first 40 GIFs
-      
           );
 
   return (
     <div className="gif-background">
-      {allGifs.map((gif, index) => (
+      {backgroundGifs.current.map((gif, index) => (
         <img
           key={index}
           src={gif}
