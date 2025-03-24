@@ -7,12 +7,15 @@ const JoinGameList = () => {
             gameDescription: 'A fun and challenging game for all ages.',
             numPlayers: 5,
             gameMode: 'Gif React Gif',
+            gameCd: 'ABCD',
         },
         {
             gameName: 'Yo mamas bootyhole',
             gameDescripton: 'Embark on an epic adventure in a magical world.',
             numPlayers: 2,
             gameMode: 'Gif React Gif',
+            gameCd: 'XFDC',
+
 
         },
         {
@@ -20,6 +23,8 @@ const JoinGameList = () => {
             gameDescription: 'Command your fleet and conquer the galaxy.',
             numPlayers: 3,
             gameMode: 'Gif React Gif',
+            gameCd: 'ASDF',
+
 
         },
         {
@@ -27,6 +32,8 @@ const JoinGameList = () => {
             gameDescription: 'Explore dark dungeons and defeat terrifying monsters.',
             numPlayers: 10,
             gameMode: 'Gif React Gif',
+            gameCd: 'QWER',
+
 
         },
         {
@@ -34,6 +41,8 @@ const JoinGameList = () => {
             gameDescription: 'Hack, steal, and outsmart your enemies in a futuristic city.',
             numPlayers: 8,
             gameMode: 'Gif React Gif',
+            gameCd: 'AAAA',
+
 
         },
         {
@@ -41,6 +50,8 @@ const JoinGameList = () => {
             gameDescription: 'Sail the high seas and become the most feared pirate.',
             numPlayers: 7,
             gameMode: 'Gif React Gif',
+            gameCd: 'CCZD',
+
 
         },
         {
@@ -48,6 +59,8 @@ const JoinGameList = () => {
             gameDescription: 'Survive the undead horde in a post-apocalyptic world.',
             numPlayers: 10,
             gameMode: 'Gif React Gif',
+            gameCd: 'ERWQ',
+
 
         },
         {
@@ -55,6 +68,8 @@ const JoinGameList = () => {
             gameDescription: 'Discover new planets and unravel the mysteries of the universe.',
             numPlayers: 7,
             gameMode: 'Gif React Gif',
+            gameCd: 'AFAC',
+
 
         },
         {
@@ -62,6 +77,7 @@ const JoinGameList = () => {
             gameDescription: 'Build your kingdom and lead your people to glory.',
             numPlayers: 9,
             gameMode: 'Gif React Gif',
+            gameCd: 'AFDS',
 
         },
         {
@@ -69,12 +85,13 @@ const JoinGameList = () => {
             gameDescription: 'Compete in high-speed races and claim the championship.',
             numPlayers: 5,
             gameMode: 'Gif React Gif',
+            gameCd: 'ACEF',
         }
     ];
 
     return (
         <div className="join-card-container">
-            {data.map((card, index) => <JoinCard key={index} gameName={card.gameName} numPlayers={card.numPlayers} gameMode={card.gameMode} />)}
+            {data.map((card, index) => <JoinCard key={index}{...card}/>)}
         </div>
     )
 }
