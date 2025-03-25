@@ -3,7 +3,7 @@ import { useState } from 'react';
 import HostGameModal from './components/ui/Modal/HostGameModal';
 import JoinGameModal from './components/ui/Modal/JoinGameModal';
 import './App.css';
-import GifBackground from './components/ui/GifBackground';
+import GifBackground from './components/ui/Background/GifBackground';
 import JoinGameList from './components/JoinGameList';
 function App() {
   

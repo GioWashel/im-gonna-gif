@@ -20,11 +20,7 @@
   --gpr-bg-color: var(--card-color);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
+
 a:hover {
   color: #535bf2;
 }
@@ -50,7 +46,7 @@ h2 {
 
   color: white;
 }
-button {
+button, a{
   border-radius: 8px;
   border: 4px solid black;
   padding: 1em 2em;
@@ -60,9 +56,10 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  font-family: "Comic Sans MS", "Comic Sans"
+  font-family: "Comic Sans MS", "Comic Sans";
+  text-decoration: none;
 }
-button:hover {
+button:hover, a:hover{
   border-color: #535bf2;
 }
 button:focus,
